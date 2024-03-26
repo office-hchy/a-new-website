@@ -13,15 +13,16 @@ function setup() {
   right.size(windowWidth / 2, windowHeight);
   right.position(windowWidth / 2, 0);
   right.style("background-color", "blue");
+  right.mouseOver(highlight);
+  right.mouseOut(unHighlight);
 }
 
 function highlight() {
   this.style("background-color", "white");
 }
-t;
 
 function unHighlight() {
-  this.style("background-color", "revert");
+  this.style("background-color", "pink");
 }
 
 function draw() {
